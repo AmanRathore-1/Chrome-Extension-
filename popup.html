@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab Info Saver</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 15px;
+            width: 260px;
+            background: #f5f5f5;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            background: #000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        #infoBox {
+            background: white;
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            word-wrap: break-word;
+            box-shadow: 0 0 4px rgba(0,0,0,0.1);
+        }
+
+        #history {
+            margin-top: 15px;
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            max-height: 150px;
+            overflow-y: auto;
+            box-shadow: 0 0 4px rgba(0,0,0,0.1);
+        }
+
+        .history-item {
+            font-size: 13px;
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn" id="getInfo">Get Current Tab Info</button>
+    <button class="btn" id="copyBtn">Copy to Clipboard</button>
+    <button class="btn" id="saveBtn">Save to History</button>
+
+    <div id="infoBox">Title & URL will appear here…</div>
+
+    <h3>Saved History:</h3>
+    <div id="history"></div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

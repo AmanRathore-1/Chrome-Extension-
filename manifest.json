@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Info Saver",
+  "version": "1.0",
+  "description": "Shows Title + URL, Copy, and Save history.",
+  "permissions": ["tabs", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png"
+    }
+  }
+}
