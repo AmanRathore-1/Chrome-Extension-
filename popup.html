@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>Tab Info Saver</title>
+
     <style>
+        /* Basic styling for background & spacing */
         body {
             font-family: Arial;
             padding: 15px;
@@ -10,6 +12,7 @@
             background: #f5f5f5;
         }
 
+        /* Common button styling */
         .btn {
             width: 100%;
             padding: 10px;
@@ -26,6 +29,7 @@
             opacity: 0.85;
         }
 
+        /* Box where tab title + URL is shown */
         #infoBox {
             background: white;
             margin-top: 12px;
@@ -36,6 +40,7 @@
             box-shadow: 0 0 4px rgba(0,0,0,0.1);
         }
 
+        /* History box */
         #history {
             margin-top: 15px;
             background: white;
@@ -46,6 +51,7 @@
             box-shadow: 0 0 4px rgba(0,0,0,0.1);
         }
 
+        /* Individual saved item style */
         .history-item {
             font-size: 13px;
             padding: 5px 0;
@@ -56,15 +62,24 @@
 
 <body>
 
+    <!-- Button to fetch current tab title & URL -->
     <button class="btn" id="getInfo">Get Current Tab Info</button>
+
+    <!-- Button to copy text to clipboard -->
     <button class="btn" id="copyBtn">Copy to Clipboard</button>
+
+    <!-- Button to save to local storage history -->
     <button class="btn" id="saveBtn">Save to History</button>
 
+    <!-- Area where title & URL will be displayed -->
     <div id="infoBox">Title & URL will appear here…</div>
 
     <h3>Saved History:</h3>
+
+    <!-- History list appears here -->
     <div id="history"></div>
 
+    <!-- JS file linked -->
     <script src="popup.js"></script>
 </body>
 </html>
